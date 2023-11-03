@@ -63,7 +63,7 @@ body:before {
 }
 
 .plan-free .plan-advantages li:nth-child(-n+3) {
-	background-image: url('../icon-check.svg');
+	background-image: url('../assets/images/icon-check.svg');
 }
 
 .plan-free .plan-advantages li:nth-child(n+4) {
@@ -71,7 +71,7 @@ body:before {
 }
 
 .plan-basic .plan-advantages li:nth-child(-n+5) {
-	background-image: url('../icon-check.svg');
+	background-image: url('../assets/images/icon-check.svg');
 }
 
 .plan-basic .plan-advantages li:nth-child(n+6) {
@@ -79,7 +79,7 @@ body:before {
 }
 
 .plan-premium .plan-advantages li {
-	background-image: url('../icon-check.svg');
+	background-image: url('../assets/images/icon-check.svg');
 }
 
 @media screen and (min-width: 768px) {

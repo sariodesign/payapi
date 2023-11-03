@@ -57,7 +57,7 @@ form .btn-secondary-alt {
 
 .input-block-checkbox input[type="checkbox"]:checked {
 	background-color: var(--dark-pink);
-	background-image: url('../icon-check-white.svg');
+	background-image: url('../assets/images/icon-check-white.svg');
 	background-position: center;
 	background-repeat: no-repeat;
 }

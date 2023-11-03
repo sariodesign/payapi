@@ -27,7 +27,7 @@ body {
 }
 
 body:before {
-  background-image: url('../bg-pattern-circle.svg');
+  background-image: url('../assets/images/bg-pattern-circle.svg');
   background-position: bottom;
   background-repeat: no-repeat;
   content: '';
