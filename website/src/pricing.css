@@ -1,0 +1,143 @@
+body:before {
+	height: 780px;
+	left: auto;
+	right: -479px;
+	top: -644px;
+	width: 780px;
+}
+
+.plans {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 80px;
+	padding-top: 24px;
+	row-gap: 48px;
+}
+
+.plan-detail {
+	text-align: center;
+}
+
+.plan-name {
+  color: var(--dark-pink);
+	font-size: 24px;
+	line-height: 1;
+	margin: 0 0 16px;
+}
+
+.plan-description {
+	font-size: 15px;
+	font-weight: 100;
+	line-height: 28px;
+	margin: 0 0 8px
+}
+
+.plan-price {
+	color: var(--san-juan-blue);
+	display: block;
+	font-family: var(--heading-font);
+	font-size: 56px;
+	line-height: 72px;
+	margin: 0 0 24px;
+}
+
+.plan-advantages {
+	border: 1px solid #979797;
+	border-left: 0;
+	border-right: 0;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto 24px;
+	padding: 24px 0;
+	text-align: left;
+}
+
+.plan-advantages li {
+	background-position: 0 center;
+	background-repeat: no-repeat;
+	color: var(--san-juan-blue);
+	font-size: 16px;
+	line-height: 28px;
+	margin: 0 0 8px 96px;
+	text-indent: 36px;
+}
+
+.plan-free .plan-advantages li:nth-child(-n+3) {
+	background-image: url('../icon-check.svg');
+}
+
+.plan-free .plan-advantages li:nth-child(n+4) {
+	opacity: .5;
+}
+
+.plan-basic .plan-advantages li:nth-child(-n+5) {
+	background-image: url('../icon-check.svg');
+}
+
+.plan-basic .plan-advantages li:nth-child(n+6) {
+	opacity: .5;
+}
+
+.plan-premium .plan-advantages li {
+	background-image: url('../icon-check.svg');
+}
+
+@media screen and (min-width: 768px) {
+	body:before {
+		left: auto;
+		right: -517px;
+		top: -464px;
+	}
+
+	header {
+		margin-bottom: 75px;
+	}
+
+	.title {
+		margin-bottom: 70px
+	}
+
+	.plans {
+		column-gap: 10px;
+		flex-direction: row;
+		margin-bottom: 100px;
+		padding: 0 16px;
+		row-gap: 0;
+	}
+
+	.plan-advantages li {
+		margin: 0 0 8px 45px;
+	}
+
+	.plan-price {
+		margin-bottom: 19px;
+	}
+
+	.section-form {
+		margin-bottom: 100px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	body:before {
+		right: -140px;
+		top: -527px;
+	}
+
+	.plans {
+		column-gap: unset;
+		justify-content: space-between;
+		margin-bottom: 0;
+		padding: 0;
+	}
+
+	.plan-detail {
+		flex: none;
+		text-align: left;
+		width: 350px;
+	}
+
+	.plan-advantages li {
+		margin-left: 0;
+	}
+}

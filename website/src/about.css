@@ -1,0 +1,140 @@
+body:before {
+	height: 780px;
+	left: auto;
+	right: -479px;
+	top: -644px;
+	width: 780px;
+}
+
+.title {
+	margin-bottom: 40px;
+}
+
+.block-text {
+	margin-bottom: 48px;
+}
+
+.block-text h2 {
+	color: var(--san-juan-blue);
+	font-size: 24px;
+	letter-spacing: -.18px;
+	line-height: 32px;
+	margin: 0 0 16px;
+}
+
+picture {
+	margin-bottom: 48px;
+}
+
+picture img {
+	width: 100%;
+}
+
+.team-results {
+	border-bottom: 1px solid rgba(54,83,107,.25);
+	border-top: 1px solid rgba(54,83,107,.25);
+	margin: 0 auto 48px;
+	padding-bottom: 16px;
+	padding-top: 16px;
+	text-align: center;
+	width: calc(100% - 48px)
+}
+
+.team-results div {
+	margin-bottom: 32px;
+}
+
+.team-results h3 {
+	font-family: var(--text-font);
+	font-size: 16px;
+	line-height: 28px;
+	margin: 0;
+}
+
+.team-results span {
+	color: var(--dark-pink);
+	font-family: var(--heading-font);
+	font-size: 56px;
+	line-height: 72px;
+}
+
+@media screen and (min-width: 768px) {
+	body:before {
+		left: auto;
+		right: -517px;
+		top: -464px;
+	}
+
+	.title {
+		margin: 0 auto 54px;
+	}
+
+	.block-text {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 64px;
+		text-align: left;
+	}
+
+	.block-text h2 {
+		font-size: 32px;
+		line-height: 40px;
+		margin: 0;
+	}
+
+	.block-text p {
+		width: 456px
+	}
+
+	.team-results {
+		border: 0;
+		column-gap: 10px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 64px;
+		padding-top: 16px;
+		text-align: left;
+		width: auto;
+	}
+
+	.team-results div {
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid rgba(54,83,107,.25);
+		border-top: 1px solid rgba(54,83,107,.25);
+		margin-bottom: 0;
+		padding: 16px 0;
+		width: 100%
+	}
+
+	.team-results h3 {
+		font-weight: 100;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	section {
+		padding: 0 40px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	body:before {
+		right: -140px;
+		top: -527px;
+	}
+
+	.title {
+		margin: 0 0 54px;
+		text-align: left;
+		width: 830px;
+	}
+
+	.block-text p {
+		width: 635px
+	}
+
+	.team-results {
+		column-gap: 30px;
+	}
+}

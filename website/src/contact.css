@@ -1,0 +1,166 @@
+body:before {
+	height: 780px;
+	left: auto;
+	right: -479px;
+	top: -644px;
+	width: 780px;
+}
+
+.contact-form {
+	margin-bottom: 80px;
+}
+
+input,
+textarea {
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid rgba(54,83,107,.5);
+	font-size: 15px;
+	line-height: 25px;
+	padding-bottom: 16px;
+	text-indent: 20px;
+	width: 100%;
+}
+
+.input-block {
+	margin-bottom: 24px;
+}
+
+form .btn-secondary-alt {
+	display: block;
+	margin-right: auto;
+	width: 152px;
+}
+
+.input-block-checkbox label {
+	align-items: center;
+	display: flex;
+}
+
+.input-block-checkbox span {
+	font-size: 15px;
+	line-height: 25px;
+	margin-left: 26px;
+	text-align: left;
+}
+
+.input-block-checkbox input[type="checkbox"] {
+	appearance: none;
+	background-color: rgba(54,83,107,.25);
+	border: 0;
+	display: block;
+	flex: none;
+	height: 24px;
+	margin: 0;
+	width: 24px;
+}
+
+.input-block-checkbox input[type="checkbox"]:checked {
+	background-color: var(--dark-pink);
+	background-image: url('../icon-check-white.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.title {
+	margin-bottom: 40px;
+}
+
+.section-title {
+	color: var(--san-juan-blue);
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+	margin-bottom: 32px;
+	opacity: .75;
+}
+
+.clients {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 44px;
+}
+
+.clients li {
+	width: calc(50% - 25px);
+}
+
+.error,
+.error input::placeholder {
+	color: var(--error-color);
+}
+
+.error input {
+	border-color: var(--error-color);
+}
+
+.error-msg {
+	font-size: 11px;
+	padding-top: 8px;
+	text-align: left;
+	text-indent: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	body:before {
+		left: auto;
+		right: -517px;
+		top: -464px;
+	}
+
+	.contact-form {
+		margin: 0 auto 64px;
+		width: 445px;
+	}
+
+	.section-title {
+		margin-bottom: 40px;
+		width: 445px
+	}
+
+	.clients {
+		margin: 0 auto;
+		width: 540px;
+	}
+
+	.clients li {
+		width: 146px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	body:before {
+		right: -140px;
+		top: -527px;
+	}
+
+	.title {
+		font-size: 56px;
+		line-height: 1;
+		margin: 0 0 46px;
+		text-align: left;
+		width: 720px;
+	}
+
+	.contact-info {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.contact-form {
+		margin: 0;
+	}
+
+	.clients {
+		row-gap: 40px;
+	}
+
+	.section-title {
+		margin-left: 0;
+		margin-right: 0;
+		text-align: left;
+	}
+}
